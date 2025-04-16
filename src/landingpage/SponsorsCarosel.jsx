@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 
 export default function SponsorsBanner() {
   const logos = [
-    "public/unimelb.png",
-    "public/enactus.png",
-    "public/map.png",
-    "public/blackbird.png",
-    "public/startmate.png"
+    "/unimelb.png",
+    "/enactus.png",
+    "/map.png",
+    "/blackbird.png",
+    "/startmate.png",
   ];
 
   // Duplicate logos to make scrolling seamless
@@ -24,7 +24,7 @@ export default function SponsorsBanner() {
               key={idx}
               src={src}
               alt="Sponsor logo"
-               className="h-10 w-60 object-contain"
+              className="h-10 w-60 object-contain"
             />
           ))}
         </div>
