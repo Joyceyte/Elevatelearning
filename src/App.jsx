@@ -3,7 +3,7 @@ import LogsComponent from "./Logs";
 import NavBarComponent from "./NavBar";
 import ProfilePage from "./ProfilePage";
 import LandingPage from "./landingpage/LandingPage";
-
+import OurStory from "./ourstorypage/OurStory";
 export default function App() {
   return (
     <div>
@@ -13,6 +13,7 @@ export default function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/logs" element={<LogsComponent />} />
         <Route path="/profilepage" element={<ProfilePage />} />
+        <Route path="/ourstory" element={<OurStory />} />
       </Routes>
     </div>
   );
