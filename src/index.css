@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .bg-large-vp {
+      background-image: url('/widemountain.png');
+      background-size: 100% auto;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  p {
+    margin-bottom: 1.5em; /* or adjust as needed for your desired space */
+  }
+  

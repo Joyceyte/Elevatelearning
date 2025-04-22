@@ -59,7 +59,12 @@ function NavBarComponent() {
           <button
             onClick={toggleMenu}
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className={`inline-flex items-center w-10 h-10 justify-center text-sm rounded-lg md:hidden transition-colors
+    ${
+      isMenuOpen
+        ? "text-fuchsia-700"
+        : "text-gray-500 hover:text-fuchsia-700 dark:text-gray-400 dark:hover:text-fuchsia-700"
+    }`}
             aria-controls="navbar-default"
             aria-expanded={isMenuOpen}
           >
@@ -80,35 +85,26 @@ function NavBarComponent() {
               />
             </svg>
           </button>
+
           <div
             className={`${
               isMenuOpen ? "block" : "hidden"
             } w-full md:block md:w-auto`}
             id="navbar-default"
           >
-            <ul className="font-medium flex flex-col mt-12 md:p-0 mt-12 border border-gray-100 rounded-lg md:flex-row md:justify-center md:items-center md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li>
-                <Link
-                  to="/"
-                  className={`block py-2 px-3 rounded md:p-0 ${
-                    isActivePath("/")
-                      ? "text-white bg-blue-700 md:bg-transparent md:text-blue-700 dark:text-white md:dark:text-blue-500"
-                      : "text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  }`}
-                ></Link>
-              </li>
-              <li>
+            <ul className="absolute top-16 right-4 z-50 w-64 font-medium flex flex-col p-4 border border-gray-100 rounded-lg shadow-md bg-white md:static md:top-auto md:right-auto md:z-auto md:p-0 md:flex-row md:justify-center md:items-center md:space-x-8 rtl:space-x-reverse md:border-0 md:shadow-none md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li className="w-full md:w-auto">
                 <Link
                   to="/ourstory"
-                  className="text-gray-800 dark:text-white font-medium hover:text-fuchsia-700 transition-colors"
+                  className="block w-full md:w-auto px-4 py-2 text-gray-800 dark:text-white font-medium hover:text-fuchsia-700 transition-colors rounded-lg"
                 >
                   Our story
                 </Link>
               </li>
-              <li>
+              <li className="w-full md:w-auto">
                 <button
                   onClick={() => setShowModal(true)}
-                  className="text-gray-800 dark:text-white font-medium hover:text-fuchsia-700 transition-colors"
+                  className="block w-full md:w-auto text-left md:text-center px-4 py-2 text-gray-800 dark:text-white font-medium hover:text-fuchsia-700 transition-colors rounded-lg"
                 >
                   Join Waitlist
                 </button>

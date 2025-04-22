@@ -1,105 +1,98 @@
-import React from 'react';
-
-export default function OurStory() {
+function OurStory() {
   return (
-    <div className="bg-gradient-to-b from-fuchsia-100 to-orange-100 text-gray-900">
-      {/* Hero Section */}
-      <section className="py-20 px-6">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl font-extrabold text-fuchsia-700 mb-6">Our Story</h1>
-          <p className="text-xl text-gray-800 max-w-2xl mx-auto">
-            Empowering young adults through innovative mental wellness solutions.
-          </p>
+    <div className="min-h-screen">
+      {/* About Us Section - Above the background image */}
+      <div className="bg-gradient-to-b from-fuchsia-100 to-orange-100 py-20 text-center">
+        <h1 className="text-5xl font-bold text-fuchsia-800">Cortexa story</h1>
+        <div
+          className="relative w-full bg-cover bg-center py-44 opacity-60"
+          style={{
+            backgroundImage: "url('/widemountain.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          {/* Optional additional content under the image */}
         </div>
-      </section>
+      </div>
 
-      {/* The Challenge Section */}
-      <section className="bg-white py-16 px-6">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <h2 className="text-3xl font-bold text-orange-600 mb-4">The Challenge</h2>
-            <p className="text-lg text-gray-700 mb-4">
-              Young adults face unprecedented levels of stress and mental health challenges. Traditional solutions often fall short, leaving many without effective support.
+      {/* Mountain Image Section */}
+
+      {/* Additional Content Section */}
+      <div className="bg-orange-100">
+        <div className="container mx-auto px-6 pb-12">
+
+          <div className="bg-white border border-neutral-300 p-6 rounded-xl shadow-md -mt-40 ">
+          <h1 className="text-2xl font-semibold text-orange-600 pb-4">A daily "how are you?"</h1>
+            <p>
+              This story begins in the overwhelming world that is the first year
+              of university.
             </p>
-            <ul className="list-disc list-inside text-gray-700 space-y-2">
-              <li>1 in 4 young Australians experience a mental health condition</li>
-              <li>Around 40% of young people with a mental health condition do not seek professional help</li>
-              <li>Suicide is a leading cause of death for young Australians</li>
-              <li>60% of young Australians feel stressed or anxious about academic and career prospects</li>
-            </ul>
-          </div>
-          <div>
-            <img
-              src="/images/mental-health-challenges.svg"
-              alt="Mental Health Challenges"
-              className="w-full h-auto rounded-xl shadow-xl"
-            />
-          </div>
-        </div>
-      </section>
 
-      {/* Solution Section */}
-      <section className="bg-fuchsia-50 py-16 px-6">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-fuchsia-700 mb-4">Introducing Cortexa</h2>
-          <p className="text-lg text-gray-700 mb-6">
-            The most advanced system for voice journaling—a thoughtfully designed AI that fosters daily reflections, leading to lasting self-awareness and emotional clarity.
-          </p>
-          <img
-            src="/images/cortexa-intro.svg"
-            alt="Cortexa Introduction"
-            className="mx-auto w-3/4 h-auto rounded-xl shadow-lg"
-          />
-        </div>
-      </section>
-
-      {/* Mission Section */}
-      <section className="bg-white py-16 px-6">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-orange-600 mb-4">Our Mission</h2>
-          <p className="text-lg text-gray-700 mb-6">
-            We believe that mental wellness should not be gate-kept by clinics or psychologists. Everyone deserves tools to become the best versions of themselves.
-          </p>
-          <p className="text-lg text-gray-700">
-            We envision a world where mental wellbeing is a fundamental right and everyone is empowered to achieve their peak potential.
-          </p>
-        </div>
-      </section>
-
-      {/* How It Works Section */}
-      <section className="bg-gradient-to-r from-fuchsia-200 to-orange-100 py-16 px-6">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <h2 className="text-3xl font-bold text-fuchsia-800 mb-4">How We Do It</h2>
-            <p className="text-lg text-gray-800 mb-4">
-              We created tools that let you look inside your inner mental workings, so you can take control of your mental wellbeing. Imagine understanding your emotions, thought patterns and belief systems so well that you can optimise your mindset in ways you never thought possible.
+            <p>
+              I attended an all girls private high school: small classes,
+              teachers who actually knew your name, and a school counselor who
+              you could talk to without booking six weeks in advance. Then
+              suddenly, I was living away from home for the first time,
+              surrounded by strangers, unwashed dishes and a lot of “what
+              am I doing with my life?”.
             </p>
-            <p className="text-lg text-gray-800">
-              Everyday, Cortexa calls to check in on you at the best time according to your routine. Our app tracks your results while Cortexa.AI analyses your emotions and uncovers hidden patterns using psychological insights.
-            </p>
-          </div>
-          <div>
-            <img
-              src="/images/voice-journaling.svg"
-              alt="Voice Journaling"
-              className="w-full h-auto rounded-xl shadow-xl"
-            />
-          </div>
-        </div>
-      </section>
 
-      {/* Looking Forward Section */}
-      <section className="bg-white py-16 px-6">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-fuchsia-700 mb-4">Looking Forward</h2>
-          <p className="text-lg text-gray-700">
-            In the next few years, we believe that advances in human-centered artificial intelligence will help us elevate our mental health and manage daily stress and anxiety before it escalates.
-          </p>
-          <p className="text-lg text-gray-700 mt-4 font-semibold">
-            Wellbeing begins now.
-          </p>
+            <p>
+              As a last ditch effort to find connection in the second semester,
+              I joined a university club. I met a friend who started texting me
+              almost everyday:
+            </p>
+
+            <p>A daily check in of “How are you?”</p>
+
+            <p>
+              She never tried to give me much life advice, but she was just
+              there to listen. And I realised that even just talking and saying
+              things out loud helped and motivated me to fix my situation,
+              opening a pressure valve on all the stress I was holding.
+            </p>
+
+            <p>
+              Then came the hype around ChatGPT and the weirdly comforting
+              human-like voice. I didn’t expect it to do much, but surprisingly,
+              it helped me make sense of my thoughts. It wasn’t magic or a
+              replacement for real connection, but instead another way to pause,
+              reflect, and check in with myself. That’s when something clicked.
+            </p>
+
+            <p>
+              What if that same kind of low-pressure, consistent support could
+              be built into something more intentional?
+            </p>
+
+            <p>
+              Not a chatbot pretending to be a therapist, and not a mental
+              health app packed with complicated mood trackers and surface level
+              quotes. Just a daily check in to feel heard, especially when
+              you’re figuring life out on your own for the first time.
+            </p>
+
+            <p>
+              That was how Cortexa was born — an AI-powered daily check-in call.
+            </p>
+
+            <p>
+              It’s got the dna of both a voice journal and a friend who listens.
+              No need to phrase things perfectly, just
+              a space to talk, reflect, and feel heard. Whether you're
+              celebrating a win or just surviving the day, Cortexa is
+              there. Not giving you answers, but helping you find your own.
+            </p>
+
+
+
+            <p>Cortexa Co-founder — Joyce</p>
+          </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }
+
+export default OurStory;
