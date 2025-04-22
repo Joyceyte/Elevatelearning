@@ -22,7 +22,7 @@ function OurStory() {
       <div className="bg-orange-100">
         <div className="container mx-auto px-6 pb-12">
 
-          <div className="bg-white border border-neutral-300 p-6 rounded-xl shadow-md -mt-40 pr-80">
+          <div className="bg-white border border-neutral-300 p-6 rounded-xl shadow-md -mt-96 pr-80">
           <h1 className="text-2xl font-semibold text-orange-600 pb-4 text-left">A daily "how are you?"</h1>
             <p>
               This story begins in the overwhelming landscape of first year uni.
