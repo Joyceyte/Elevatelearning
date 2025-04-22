@@ -3,9 +3,9 @@ function OurStory() {
     <div className="min-h-screen">
       {/* About Us Section - Above the background image */}
       <div className="bg-gradient-to-b from-fuchsia-100 to-orange-100 py-20 text-center">
-        <h1 className="text-5xl font-bold text-fuchsia-800">Cortexa story</h1>
+        <h1 className="text-5xl  text-fuchsia-800 -mb-26">Cortexa story</h1>
         <div
-          className="relative w-full bg-cover bg-center py-44 opacity-60"
+          className="relative w-full bg-cover bg-right py-80 opacity-70"
           style={{
             backgroundImage: "url('/widemountain.png')",
             backgroundSize: "cover",
@@ -22,15 +22,14 @@ function OurStory() {
       <div className="bg-orange-100">
         <div className="container mx-auto px-6 pb-12">
 
-          <div className="bg-white border border-neutral-300 p-6 rounded-xl shadow-md -mt-40 ">
-          <h1 className="text-2xl font-semibold text-orange-600 pb-4">A daily "how are you?"</h1>
+          <div className="bg-white border border-neutral-300 p-6 rounded-xl shadow-md -mt-40 pr-80">
+          <h1 className="text-2xl font-semibold text-orange-600 pb-4 text-left">A daily "how are you?"</h1>
             <p>
-              This story begins in the overwhelming world that is the first year
-              of university.
+              This story begins in the overwhelming landscape of first year uni.
             </p>
 
             <p>
-              I attended an all girls private high school: small classes,
+              I attended an all-girls private high school: small classes,
               teachers who actually knew your name, and a school counselor who
               you could talk to without booking six weeks in advance. Then
               suddenly, I was living away from home for the first time,
@@ -87,7 +86,7 @@ function OurStory() {
 
 
 
-            <p>Cortexa Co-founder — Joyce</p>
+            <p className = "text-xl">Cortexa Co-founder — Joyce Hu</p>
           </div>
         </div>
       </div>
