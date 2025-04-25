@@ -57,7 +57,7 @@ const Homepage = () => {
   return (
     <div className="font-sans">
       {/* Section 1: Photo and Bio */}
-      <section className="py-16 bg-slate-50" id="about">
+      <section className="py-16 bg-slate-50 px-4" id="about">
         <div className="flex flex-col lg:flex-row items-center gap-12 p-4  rounded-lg">
           <div className="w-full lg:w-1/2 flex justify-center">
             <img
@@ -85,7 +85,7 @@ const Homepage = () => {
         </div>
       </section>
 
-      <section className="w-full bg-blue-700 py-16 px-6">
+      <section className="w-full bg-blue-700 py-16 px-8">
         <h2 className="text-3xl font-bold text-slate-50 text-center mb-12">
           My Credentials
         </h2>
@@ -147,9 +147,9 @@ const Homepage = () => {
           Book a FREE 20-Minute Consultation
         </h2>
         <p className="text-lg text-center text-slate-50 mb-4">
-          Let’s discuss you/your child’s individual needs. Text me at{" "}
-          <span className="font-semibold text-orange-500">0435535896 </span>
-          to arrange a time.
+          Let’s discuss you/your child’s individual goals. Text me at{" "}
+          <span className="font-semibold text-orange-500 px-4">+61 435535896 </span>
+          to arrange a consultation and I will aim to get back to you within 48 hours. 
         </p>
       </section>
     </div>

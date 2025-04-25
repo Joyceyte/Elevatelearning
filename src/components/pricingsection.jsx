@@ -3,7 +3,7 @@ import { CheckIcon, StarIcon } from "@heroicons/react/solid";
 export default function PricingSection() {
   return (
     <section className="w-full bg-blue-700 py-16 px-6" id="pricing">
-      <h2 className="text-3xl font-bold text-slate-50 text-center mb-12">Pricing</h2>
+      <h2 className="text-3xl font-bold text-slate-50 text-center mb-12">Pricing (AUD)</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 px-6">
         {/* One-on-one Pricing */}
         <div className="bg-slate-100 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">

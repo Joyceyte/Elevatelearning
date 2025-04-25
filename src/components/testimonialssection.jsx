@@ -34,24 +34,25 @@ export default function TestimonialsSection() {
           {[
             {
               name: "Rita",
-              title: "2023 — ATAR 99.95",
+              title: "2023 — ATAR 99.95 - IB English Literature",
               text: "Hi Joyce! Happy new year — I got 45 (99.95)! I can’t begin to express my gratitude for all your support with the academic and emotional aspects of IB. You’re so generous with your time and knowledge, and you’ve done a superb job helping me understand GLA techniques (I got 92% for Lit). You’re an amazing tutor — I wouldn’t be here without you!",
             },
             {
               name: "Jenny",
-              title: "ATAR 99.95 — English",
+              title: "2024 - ATAR 99.95 — IB English Literature",
               text: "Thanks again for all your support the last 2 years — your writing formulas and constant feedback really kept me practicing. I’ve learned so much from you!",
             },
             {
+                name: "Sarah (Parent)",
+                title: "Current student - Maths Olympiad Distinction - Primary School Maths",
+                text: "Joyce has been incredibly patient with my son and really takes the time to explain things in a way he understands. He used to get frustrated with maths, but now he feels much more confident and even looks forward to tutoring each week!",
+              },
+            {
               name: "Hadley",
-              title: "IB Maths — Grade 4 to 6",
+              title: "2024 - improved from band 4 to band 6 - IB Maths",
               text: "Thanks for all your help with maths and actually helping me understand the concepts. The exams went really well — better than my other subjects!",
             },
-            {
-              name: "Sarah (Parent)",
-              title: "Primary Maths — Year 5",
-              text: "Joyce has been incredibly patient with my son and really takes the time to explain things in a way he understands. He used to get frustrated with maths, but now he feels much more confident and even looks forward to tutoring each week!",
-            },
+          
           ].map((review, idx) => (
             <div
               key={idx}
