@@ -61,7 +61,7 @@ const Homepage = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 p-4  rounded-lg">
           <div className="w-full lg:w-1/2 flex justify-center">
             <img
-              src="public/selfie.jpg"
+              src="/selfie.jpg"
               alt="Joyce's selfie"
               className="rounded-lg shadow-md w-60 h-68 lg:w-72 lg:h-88"
             />
