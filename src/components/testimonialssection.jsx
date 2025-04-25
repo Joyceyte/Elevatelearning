@@ -15,7 +15,7 @@ export default function TestimonialsSection() {
 
   return (
     <section className="w-full bg-white py-16 px-6 relative" id="testimonials">
-      <h2 className="text-3xl font-bold text-blue-600 text-center mb-12">Satistfied students and parents</h2>
+      <h2 className="text-3xl font-bold text-blue-600 text-center mb-12">Satisfied students and parents</h2>
 
       <div className="relative flex items-center">
         {/* Left Arrow */}
