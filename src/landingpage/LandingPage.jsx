@@ -79,7 +79,7 @@ const Homepage = () => {
               founded a peer-tutoring club at my high school. Now, as a student
               at the University of Melbourne, I continue to tutor, providing the
               right mindset, resources, and support that make learning feel more
-              engaging and rewarding than ever.
+              engaging and rewarding than ever. My current focus is tutoring English reading comprehension and writing for primary school and grade 7 to 10 high school students. Additionally, I provide IB English Literature tutoring for high school seniors. 
             </p>
           </div>
         </div>
