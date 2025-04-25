@@ -1,179 +1,159 @@
-import SponsorsCarousel from "./SponsorsCarosel";
-import FeaturesSection from "./FeatureNav";
-import { createAvatar } from "@dicebear/core";
-import { notionists } from "@dicebear/collection";
-import { useState } from "react";
-import WaitlistPopup from "../components/WaitlistPopup";
-
-function LandingPage() {
-  const avatar3 = createAvatar(notionists, { seed: "Aneka" }).toDataUri();
-  const avatar2 = createAvatar(notionists, { seed: "Felix" }).toDataUri();
-  const avatar1 = createAvatar(notionists).toDataUri();
-  const [showModal, setShowModal] = useState(false);
-
+import React from "react";
+import {
+  FaTrophy,
+  FaUniversity,
+  FaGraduationCap,
+  FaUsers,
+  FaBook,
+  FaChartLine,
+  FaUserCheck,
+  FaPenFancy,
+} from "react-icons/fa";
+import TestimonialsSection from "../components/testimonialssection";
+import PricingSection from "../components/pricingsection";
+const Homepage = () => {
+  const credentials = [
+    {
+      icon: <FaTrophy className="text-slate-950 text-xl mb-1" />,
+      title: "ATAR 99.95",
+      desc: "Achieved the highest possible ATAR of 99.95 (45 IB score)",
+    },
+    {
+      icon: <FaUniversity className="text-slate-950 text-xl mb-1" />,
+      title: "Top Scholarship",
+      desc: "Awarded the highest scholarship to Presbyterian Ladies College",
+    },
+    {
+      icon: <FaGraduationCap className="text-slate-950 text-xl mb-1" />,
+      title: "Chancellor’s Scholar",
+      desc: "Studying Biochemistry at the University of Melbourne",
+    },
+    {
+      icon: <FaUsers className="text-slate-950 text-xl mb-1" />,
+      title: "Student Success",
+      desc: "Helped two students achieve an ATAR of 99.95",
+    },
+    {
+      icon: <FaUserCheck className="text-slate-950 text-xl mb-1" />,
+      title: "Experienced",
+      desc: "Tutored 30+ students over 5+ years",
+    },
+    {
+      icon: <FaChartLine className="text-slate-950 text-xl mb-1" />,
+      title: "Proven Results",
+      desc: "English and Maths grades increased by 30% on average",
+    },
+    {
+      icon: <FaBook className="text-slate-950 text-xl mb-1" />,
+      title: "Tailored Support",
+      desc: "Specialise in long-term, individualised and encouraging support",
+    },
+    {
+      icon: <FaPenFancy className="text-slate-950 text-xl mb-1" />,
+      title: "Literature Analysis",
+      desc: "Wrote a 4000-word final literature analysis in IB",
+    },
+  ];
   return (
-    <div>
-      {/* Pass isPopupOpen and setIsPopupOpen to WaitlistPopup */}
-      <WaitlistPopup showModal={showModal} setShowModal={setShowModal} />
+    <div className="font-sans">
+      {/* Section 1: Photo and Bio */}
+      <section className="py-16 bg-slate-50" id="about">
+        <div className="flex flex-col lg:flex-row items-center gap-12 p-4  rounded-lg">
+          <div className="w-full lg:w-1/2 flex justify-center">
+            <img
+              src="public/selfie.jpg"
+              alt="Joyce's selfie"
+              className="rounded-lg shadow-md w-60 h-68 lg:w-72 lg:h-88"
+            />
+          </div>
+          <div className="w-full lg:w-1/2">
+            <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-purple-700 to-purple-700 mb-4">
+              Hi, I’m Joyce!
+            </h2>
 
-      <section className="relative text-center py-24 px-6 overflow-hidden">
-        {/* Background gradient absolutely positioned */}
-        <div className="absolute inset-0 bg-gradient-to-b from-fuchsia-100 to-orange-100 -z-10" />
-
-        {/* Foreground content with semi-transparent white background */}
-        <div className="bg-white/70 backdrop-blur-md rounded-xl p-8 max-w-3xl mx-auto shadow-lg">
-          <h1 className="text-5xl font-bold mb-6 text-fuchsia-900">
-            An emotionally intelligent journal
-          </h1>
-          <p className="text-lg text-gray-700">
-            Improve your mental well-being with the most advanced AI call agent.
-          </p>
-          <button
-            onClick={() => setShowModal(true)}
-            className="bg-fuchsia-700 text-white mt-6 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-fuchsia-500 transition shadow-md"
-          >
-            Join the Waitlist
-          </button>
+            <p className="text-lg text-gray-700 leading-relaxed mb-4 pr-6">
+              Growing up, I always had a passion for problem-solving and
+              literature, but it wasn’t until high school that I discovered the
+              joy of sharing these passions with others. What started as a
+              holiday tutoring job quickly evolved into something more when I
+              founded a peer-tutoring club at my high school. Now, as a student
+              at the University of Melbourne, I continue to tutor, providing the
+              right mindset, resources, and support that make learning feel more
+              engaging and rewarding than ever.
+            </p>
+          </div>
         </div>
       </section>
-      <section>
-        <SponsorsCarousel />
-      </section>
 
-      <FeaturesSection />
-
-      <section className="bg-gradient-to-b from-neutral-50 via-fuchsia-200 to-fuchsia-300 py-20 px-6">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center text-fuchsia-900 ">
-          Facing everyday challenges, together
+      <section className="w-full bg-blue-700 py-16 px-6">
+        <h2 className="text-3xl font-bold text-slate-50 text-center mb-12">
+          My Credentials
         </h2>
-        <p className="px-6 text-lg text-gray-700 text-center mt-6 mb-12">
-          Life can feel overwhelming—whether it's managing stress, balancing
-          responsibilities, or just needing someone to talk to. Cortexa carves
-          out time for yourself, reflect, and improve your well-being.
-        </p>
-        <div className="max-w-4xl mx-auto grid gap-10 sm:grid-cols-1 md:grid-cols-2">
-          {/* Testimonial 1 */}
-          <div className="relative bg-orange-200 shadow-md rounded-2xl p-6 pt-4 pb-14">
-            <p className="italic text-gray-800 mb-6">
-              "Journaling has always been known for its benefits, but I just
-              couldn't make it a regular habit because it felt like too much
-              effort."
-            </p>
-            <div className="flex items-center gap-4 absolute bottom-4 left-6">
-              <img
-                src={avatar3}
-                alt="Jessica C."
-                className="w-14 h-14 rounded-full object-cover"
-              />
-              <p className="text-sm font-semibold text-gray-800">Arthur H.</p>
+        <div className="flex flex-col lg:flex-row justify-center items-stretch gap-8">
+          {/* Personal Box */}
+          <div className="flex-1 max-w-xl bg-slate-100 rounded-xl p-6 shadow-md flex flex-col">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-2xl">🎓</span>
+              <h3 className="text-xl font-semibold text-slate-900">
+                Personal Achievements
+              </h3>
             </div>
-
-            {/* Tail as child element, attached to bottom */}
-            <div className="absolute left-10 bottom-[-8px] w-4 h-4 bg-orange-200 rotate-45 shadow-[3px_3px_6px_rgba(0,0,0,0.1)]"></div>
+            <ul className="text-slate-700 space-y-2 pl-1 flex-1">
+              <li>
+                → Achieved the highest possible ATAR of 99.95 (45 IB score)
+              </li>
+              <li>
+                → Awarded the highest scholarship to Presbyterian Ladies College
+              </li>
+              <li>
+                → Chancellor’s Scholar studying Biochemistry at the University
+                of Melbourne
+              </li>
+              <li>→ Wrote a 4000-word final literature analysis in IB</li>
+            </ul>
           </div>
 
-          {/* Testimonial 2 */}
-          <div className="relative bg-orange-200 shadow-md rounded-2xl p-6 pt-4 pb-14">
-            <p className="italic text-gray-800 mb-6">
-              "As a young man, it's tough to find someone to talk to about the
-              pressures of life. Therapy feels like a big step, and at the time,
-              I simply couldn’t afford it."
-            </p>
-            <div className="flex items-center gap-4 absolute bottom-4 left-6">
-              <img
-                src={avatar2}
-                alt="Jessica C."
-                className="w-14 h-14 rounded-full object-cover"
-              />
-
-              <p className="text-sm font-semibold text-gray-800">Ben L.</p>
+          {/* Tutoring Box */}
+          <div className="flex-1 max-w-xl bg-slate-100 rounded-xl p-6 shadow-md flex flex-col">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-2xl">✏️</span>
+              <h3 className="text-xl font-semibold text-slate-900">
+                Tutoring Experience
+              </h3>
             </div>
-            <div className="absolute left-10 bottom-[-8px] w-4 h-4 bg-orange-200 rotate-45 shadow-[3px_3px_6px_rgba(0,0,0,0.1)]"></div>
-          </div>
-
-          {/* Testimonial 3 */}
-          <div className="relative bg-orange-200 shadow-md rounded-2xl p-6 pt-4 pb-14 md:col-span-2">
-            <p className="italic text-gray-800 mb-6">
-              Using ChatGPT feels like having a therapist available 24/7, and I
-              feel comfortable knowing I won’t be judged, though there is a lack
-              of personal connection."
-            </p>
-            <div className="flex items-center gap-4 absolute bottom-4 left-6">
-              <img
-                src={avatar1}
-                alt="Jessica C."
-                className="w-14 h-14 rounded-full object-cover"
-              />
-
-              <p className="text-sm font-semibold text-gray-800">Jessica C.</p>
-            </div>
-            <div className="absolute left-10 bottom-[-8px] w-4 h-4 bg-orange-200 rotate-45 shadow-[3px_3px_6px_rgba(0,0,0,0.1)]"></div>
+            <ul className="text-slate-700 space-y-2 pl-1 flex-1">
+              <li>→ Helped two students achieve an ATAR of 99.95</li>
+              <li>→ Tutored 30+ students over 5+ years</li>
+              <li>→ Average grade increase of 30% over 2 years</li>
+              <li>
+                → Specialise in long-term, individualised and encouraging
+                support
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="bg-gradient-to-b from-fuchsia-300 to-fuchsia-600 p-20"></section>
-      {/* CTA */}
-      <section className="bg-fuchsia-600 text-white pt-50 pb-10 text-center">
-        <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-            Be part of the movement today
-          </h2>
+      <TestimonialsSection />
 
-          <p className="text-lg mb-8 max-w-2xl mx-auto font-bold">
-            Our mission is to give young adults transformative tools that build
-            emotional resilience, promote mindfulness, and enhance overall
-            wellbeing.
-          </p>
+      <PricingSection />
 
-          <button
-            onClick={() => setShowModal(true)}
-            className="bg-orange-500 text-white px-6 py-3 rounded-xl text-lg font-semibold shadow-md hover:bg-orange-400 transition-all duration-200"
-          >
-            Join the Waitlist
-          </button>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-fuchsia-600 py-6 text-center text-gray-50 text-sm">
-        <div className="flex justify-center space-x-6 mb-2">
-          <a
-            href="https://instagram.com/yourhandle"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-          >
-            <svg
-              className="w-5 h-5 text-gray-50 hover:text-orange-500 transition"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zm0 1.5h8.5A4.25 4.25 0 0120.5 7.75v8.5a4.25 4.25 0 01-4.25 4.25h-8.5A4.25 4.25 0 013.5 16.25v-8.5A4.25 4.25 0 017.75 3.5zm8.25 2a.75.75 0 100 1.5.75.75 0 000-1.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7z" />
-            </svg>
-          </a>
-          <a
-            href="https://www.linkedin.com/yourprofile"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            <svg
-              className="w-5 h-5 text-gray-50 hover:text-orange-500 transition"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M4.98 3.5a2.5 2.5 0 11-.01 5.001A2.5 2.5 0 014.98 3.5zM2.5 9h5v12h-5V9zm7.5 0h4.7v1.7h.1c.6-1 2-2 4-2 4.3 0 5.1 2.8 5.1 6.4V21h-5v-5.4c0-1.3-.02-3-1.8-3-1.8 0-2.1 1.4-2.1 2.9V21h-5V9z" />
-            </svg>
-          </a>
-        </div>
-        <p className="text-xs">
-          &copy; {new Date().getFullYear()} Cortexa. All rights reserved.
+      {/* Section 5: Book a Free Consultation */}
+      <section
+        className=" mx-auto py-16 px-6 bg-blue-700 shadow-lg "
+        id="contact"
+      >
+        <h2 className="text-3xl font-bold text-slate-50 text-center mb-8">
+          Book a FREE 20-Minute Consultation
+        </h2>
+        <p className="text-lg text-center text-slate-50 mb-4">
+          Let’s discuss you/your child’s individual needs. Text me at{" "}
+          <span className="font-semibold text-orange-500">0435535896 </span>
+          to arrange a time.
         </p>
-      </footer>
+      </section>
     </div>
   );
-}
+};
 
-export default LandingPage;
+export default Homepage;

@@ -15,3 +15,7 @@
     margin-bottom: 1.5em; /* or adjust as needed for your desired space */
   }
   
+  html {
+    scroll-behavior: smooth;
+  }
+  
