@@ -1,9 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import LogsComponent from "./Logs";
 import NavBarComponent from "./NavBar";
-import ProfilePage from "./ProfilePage";
 import LandingPage from "./landingpage/LandingPage";
-import OurStory from "./ourstorypage/OurStory";
+import IBPage from "./ibenglish/IbenglishPage";
+
 export default function App() {
   return (
     <div>
@@ -11,9 +10,7 @@ export default function App() {
       <NavBarComponent />
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/logs" element={<LogsComponent />} />
-        <Route path="/profilepage" element={<ProfilePage />} />
-        <Route path="/ourstory" element={<OurStory />} />
+        <Route path="/ib-english" element= {<IBPage/>}/>
       </Routes>
     </div>
   );

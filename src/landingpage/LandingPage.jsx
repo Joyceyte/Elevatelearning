@@ -57,7 +57,9 @@ const Homepage = () => {
   return (
     <div className="font-sans">
       {/* Section 1: Photo and Bio */}
+      
       <section className="py-16 bg-slate-50 px-4" id="about">
+      <div className = "text-5xl font-bold p-16 text-center text-[#515cb8]">Primary and high school general English and Maths</div>
         <div className="flex flex-col lg:flex-row items-center gap-12 p-4  rounded-lg">
           <div className="w-full lg:w-1/2 flex justify-center">
             <img
@@ -76,10 +78,10 @@ const Homepage = () => {
               literature, but it wasn’t until high school that I discovered the
               joy of sharing these passions with others. What started as a
               holiday tutoring job quickly evolved into something more when I
-              founded a peer-tutoring club at my high school. Now, as a student
+              founded a peer-tutoring club at my high school. After achieving a 99.95 ATAR and tutoring over 30 students, I've refined my tutoring methods to suit a variety of learing styles.  Now, as a student
               at the University of Melbourne, I continue to tutor, providing the
               right mindset, resources, and support that make learning feel more
-              engaging and rewarding than ever. My current focus is tutoring English reading comprehension and writing for primary school and grade 7 to 10 high school students. Additionally, I provide IB English Literature tutoring for high school seniors. 
+              engaging and rewarding than ever. My current focus is tutoring English reading comprehension and writing for primary school and grade 7 to 10 high school students. Additionally, I provide maths tutoring, whether your goal is to catch-up, learn extention material, prepare for NATPLAN or excel a scholarship exam.
             </p>
           </div>
         </div>

@@ -19,3 +19,47 @@
     scroll-behavior: smooth;
   }
   
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Optional for smooth movement */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Class to apply fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Default Flex (for larger screens) */
+@media (min-width: 768px) {
+  .timeline-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .timeline-item {
+    width: 20%;
+    text-align: center;
+  }
+}
+
+/* For smaller screens (iPhone, etc.) */
+@media (max-width: 767px) {
+  .timeline-wrapper {
+    display: block;
+  }
+  .timeline-item {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .timeline-line {
+    display: none;
+  }
+}
