@@ -57,9 +57,11 @@ const Homepage = () => {
   return (
     <div className="font-sans">
       {/* Section 1: Photo and Bio */}
-      
+
       <section className="py-16 bg-slate-50 px-4" id="about">
-      <div className = "text-5xl font-bold p-16 text-center text-[#515cb8]">Primary and high school general English and Maths</div>
+        <div className="text-5xl font-bold p-16 text-center text-[#515cb8]">
+          Primary and high school general English and Maths
+        </div>
         <div className="flex flex-col lg:flex-row items-center gap-12 p-4  rounded-lg">
           <div className="w-full lg:w-1/2 flex justify-center">
             <img
@@ -78,10 +80,16 @@ const Homepage = () => {
               literature, but it wasn’t until high school that I discovered the
               joy of sharing these passions with others. What started as a
               holiday tutoring job quickly evolved into something more when I
-              founded a peer-tutoring club at my high school. After achieving a 99.95 ATAR and tutoring over 30 students, I've refined my tutoring methods to suit a variety of learing styles.  Now, as a student
-              at the University of Melbourne, I continue to tutor, providing the
+              founded a peer-tutoring club at my high school. After achieving a
+              99.95 ATAR and tutoring over 30 students, I've refined my tutoring
+              methods to suit a variety of learing styles. Now, as a student at
+              the University of Melbourne, I continue to tutor, providing the
               right mindset, resources, and support that make learning feel more
-              engaging and rewarding than ever. My current focus is tutoring English reading comprehension and writing for primary school and grade 7 to 10 high school students. Additionally, I provide maths tutoring, whether your goal is to catch-up, learn extention material, prepare for NATPLAN or excel a scholarship exam.
+              engaging and rewarding than ever. My current focus is tutoring
+              English reading comprehension and writing for primary school and
+              grade 7 to 10 high school students. Additionally, I provide maths
+              tutoring, whether your goal is to catch-up, learn extention
+              material, prepare for NATPLAN or excel a scholarship exam.
             </p>
           </div>
         </div>
@@ -111,7 +119,7 @@ const Homepage = () => {
                 → Chancellor’s Scholar studying Biochemistry at the University
                 of Melbourne
               </li>
-              <li>→ Wrote a 4000-word final literature analysis in IB</li>
+              <li>→ Recieved an A in IB English Literature Extended Essay</li>
             </ul>
           </div>
 
@@ -150,8 +158,11 @@ const Homepage = () => {
         </h2>
         <p className="text-lg text-center text-slate-50 mb-4">
           Let’s discuss you/your child’s individual goals. Text me at{" "}
-          <span className="font-semibold text-orange-500 px-4">+61 435535896 </span>
-          to arrange a consultation and I will aim to get back to you within 48 hours. 
+          <span className="font-semibold text-orange-500 px-4">
+            +61 435535896{" "}
+          </span>
+          to arrange a consultation and I will aim to get back to you within 48
+          hours.
         </p>
       </section>
     </div>
